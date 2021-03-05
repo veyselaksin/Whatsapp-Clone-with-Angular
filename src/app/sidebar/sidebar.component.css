@@ -6,6 +6,11 @@
     flex-direction: column;
 }
 
+#row-sidebar{
+    display: flex;
+    flex-direction: column;
+}
+
 #sidebar-header{
     flex-basis: 67px;
     background-color: #eee;
@@ -69,15 +74,17 @@ input{
 
 #sidebar-content{
     padding-right: 5px;
-}
-#sidebar-content:hover{
-    background-color: rgb(247, 247, 247);
+    flex-grow: 1;
+    overflow: auto;
 }
 .conversation{
     width: 100%;
     height: 67px;
     display: flex;
     transition: all .4s ease-in-out;
+}
+.conversation:hover{
+    background-color: rgb(247, 247, 247);
 }
 .profile{
     flex-basis: 73px;
@@ -111,4 +118,6 @@ input{
     color: #717171;
     font-size: small;
     padding-top: 5px;
+    align-items: center;
+    display: flex;
 }
